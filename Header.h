@@ -21,6 +21,18 @@ typedef struct {
     int num_facture,num_contrat;
     Date date_facture,date_echeance;
 }Facture ;
+ struct administrateur{
+char email[20],mot_de_passe[20];
+ };
+struct carte_bancaire {
+char num_carte[17], nom_complet[25],code_veri[4];
+date date_expi;
+};
+
+struct adresse {
+char ville[20],quartier[20],compteur[20],num_residence[20];
+
+};
 
 FILE *fp;
 
